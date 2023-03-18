@@ -126,7 +126,7 @@ app.get("/api/v1/auth/anonymous", async (req, res) => {
 app.get("/api/v1/core/preview-courses", async (req, res) => {
     try {
         const tokenResponse = await fetch(
-            "https://server-for-courses.onrender.com/api/v1/auth/anonymous",
+            "http://localhost:5555/api/v1/auth/anonymous",
             {
                 method: "GET",
                 headers: {
@@ -156,7 +156,7 @@ app.get("/api/v1/core/preview-courses", async (req, res) => {
 app.get("/api/v1/core/preview-courses/:id", async (req, res) => {
     try {
         const tokenResponse = await fetch(
-            "https://server-for-courses.onrender.com/api/v1/auth/anonymous",
+            "http://localhost:5555/api/v1/auth/anonymous",
             {
                 method: "GET",
                 headers: {
